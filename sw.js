@@ -3,12 +3,15 @@
 //1. Nombre del sw y los archivos a cachear
 
 const CACHE_NAME = "mi-cache";
+const BASE_PATH= "pwa_ejemplo/"
 
 const urlsToCache = [ 
-    "index.html",
-    "styles.css", 
-    "app.js",
-    "offline.html"
+    `${BASE_PATH}index.html`,
+    `${BASE_PATH}styles.css`, 
+    `${BASE_PATH}app.js`,
+    `${BASE_PATH}offline.html`,
+    `${BASE_PATH}$icons/icon-192x192.png`,
+    `${BASE_PATH}icons/icon-512x512.png`,
 ];
 
 //2. INSTALL - se ejecuta al instalar el service Worker
